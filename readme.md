@@ -1,26 +1,4 @@
-# HaGRID Dynamic Gestures
-[HaGRID main repo](https://github.com/hukenovs/hagrid)
 
-## Overview
-This repository contains using HaGRID dataset for dynamic gesture recognition. The dataset is available [here](https://github.com/hukenovs/hagrid).
-
-### Project
-
-```
-├── ocsort/ # source code for Observation-Centric Sorting
-│   ├── kalmanfilter.py # Kalman filter
-│   ├── kalmanboxtracker.py # Kalman box tracker
-│   ├── association.py # Association of boxes with trackers
-├── utils/ # useful utils
-│   ├── action_controller.py # Action controller for dynamic gestures
-│   ├── box_utils_numpy.py # Box utils for numpy
-│   ├── enums.py # Enums for dynamic gestures and actions
-│   ├── hand.py # Hand class for dynamic gestures recognition
-│   ├── drawer.py # Debug drawer
-├── onnx_models.py # ONNX models for gesture recognition
-├── main_controller.py # Main controller for dynamic gestures recognition, uses ONNX models, ocsort and utils
-├── run_demo.py # Demo script for dynamic gestures recognition
-```
 
 ## Installation
 Clone and install required python packages:
@@ -101,20 +79,5 @@ At the moment the code supports 6 groups of dynamic gestures:
   <img src="images/swipe3_up_down.gif" height="200" alt="Swipe 3 Up/Down">
 </div>
 
-### License
-This work is licensed under a variant of <a rel="license" href="https://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.
 
-Please see the specific [license](./license/LICENSE-2.0.txt).
 
-### Citation
-You can cite the paper using the following BibTeX entry:
-
-    @misc{nuzhdin2024hagridv21mimagesstatic,
-          title={HaGRIDv2: 1M Images for Static and Dynamic Hand Gesture Recognition},
-          author={Anton Nuzhdin and Alexander Nagaev and Alexander Sautin and Alexander Kapitanov and Karina Kvanchiani},
-          year={2024},
-          eprint={2412.01508},
-          archivePrefix={arXiv},
-          primaryClass={cs.CV},
-          url={https://arxiv.org/abs/2412.01508},
-    }
